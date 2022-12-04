@@ -29,9 +29,7 @@ codename="$(lsb_release -s -c)"
 architecture="$(uname -m)"
 HESTIA_INSTALL_DIR="$HESTIA/install/deb"
 VERBOSE='no'
-wget https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb
-dpkg -i mysql-apt-config_0.8.24-1_all.deb 
-apt update
+
 # Define software versions
 HESTIA_INSTALL_VER='1.6.11'
 # Dependencies
